@@ -1,10 +1,8 @@
-// storage-adapter-import-placeholder
-import { mongooseAdapter } from '@payloadcms/db-mongodb' // database-adapter-import
-
 import sharp from 'sharp' // sharp-import
 import path from 'path'
 import { buildConfig, PayloadRequest } from 'payload'
 import { fileURLToPath } from 'url'
+import { sqliteAdapter } from '@payloadcms/db-sqlite'
 
 import { Categories } from './collections/Categories'
 import { Media } from './collections/Media'
@@ -60,8 +58,10 @@ export default buildConfig({
   // This config helps us configure global or default features that the other editors can inherit
   editor: defaultLexical,
   // database-adapter-config-start
-  db: mongooseAdapter({
-    url: process.env.DATABASE_URI,
+  db: sqliteAdapter({
+    client: {
+      url: process.env.DATABASE_URI || '',
+    },
   }),
   // database-adapter-config-end
   collections: [Pages, Posts, Media, Categories, Users],
