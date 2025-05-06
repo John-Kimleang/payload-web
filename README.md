@@ -47,14 +47,14 @@ pnpm install
 pnpm add payload@3.37.0
 ```
 
-### If have conflict version problem
-```bash
-pnpm add payload@3.37.0
-```
-
 ### .Env
 ```bash
 cp .env.example .env
+```
+
+### Start local server
+```bash
+pnpm dev
 ```
 
 
