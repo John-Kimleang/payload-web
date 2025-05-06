@@ -1,6 +1,6 @@
-# Payload Website Template
+# Full-Stack Payload
 
-This is the official [Payload Website Template](https://github.com/payloadcms/payload/blob/main/templates/website). Use it to power websites, blogs, or portfolios from small to enterprise. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
+<!-- This is the official [Payload Website Template](https://github.com/payloadcms/payload/blob/main/templates/website). Use it to power websites, blogs, or portfolios from small to enterprise. This repo includes a fully-working backend, enterprise-grade admin panel, and a beautifully designed, production-ready website.
 
 This template is right for you if you are working on:
 
@@ -21,22 +21,42 @@ Core features:
 - [Search](#search)
 - [Redirects](#redirects)
 - [Jobs and Scheduled Publishing](#jobs-and-scheduled-publish)
-- [Website](#website)
+- [Website](#website) -->
 
 ## Quick Start
 
 To spin up this example locally, follow these steps:
 
 ### Clone
+```bash
+git clone https://github.com/kimmleang/payload-web.git
+```
 
-### Development
+### Install pnpm
+```bash
+cd payload-web
+```
 
-1. First [clone the repo](#clone) if you have not done so already
-1. `cd my-project && cp .env.example .env` to copy the example environment variables
-1. `pnpm install && pnpm dev` to install dependencies and start the dev server
-1. open `http://localhost:3000` to open the app in your browser
+### Install pnpm
+```bash
+pnpm install
+```
 
-That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+### If have conflict version problem
+```bash
+pnpm add payload@3.37.0
+```
+
+### If have conflict version problem
+```bash
+pnpm add payload@3.37.0
+```
+
+### .Env
+```bash
+cp .env.example .env
+```
+
 
 ## How it works
 
