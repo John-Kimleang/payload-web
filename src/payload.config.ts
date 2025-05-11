@@ -70,7 +70,9 @@ export default buildConfig({
   }),
   // database-adapter-config-end
   collections: [Pages, Posts, Media, Categories, Users],
-  cors: [getServerSideURL()].filter(Boolean),
+  cors: {
+    origins: allowedOrigins,
+  },
   globals: [Header, Footer],
   plugins: [
     ...plugins,
@@ -96,7 +98,5 @@ export default buildConfig({
     },
     tasks: [],
   },
-  cors : {
-    origins: allowedOrigins,
-  }
+
 })
