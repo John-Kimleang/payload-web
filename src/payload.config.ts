@@ -17,6 +17,11 @@ import { getServerSideURL } from './utilities/getURL'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
+const allowedOrigins = [
+  'https://payload-web-liart.vercel.app',
+  'https://payload-jwerk83u8-john-kimleangs-projects.vercel.app',
+  'http://localhost:3000',
+]
 
 export default buildConfig({
   admin: {
@@ -91,4 +96,7 @@ export default buildConfig({
     },
     tasks: [],
   },
+  cors : {
+    origins: allowedOrigins,
+  }
 })
