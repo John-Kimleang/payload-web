@@ -18,8 +18,8 @@ import { getServerSideURL } from './utilities/getURL'
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 const allowedOrigins = [
-  'https://payload-web-liart.vercel.app',
-  'https://payload-jwerk83u8-john-kimleangs-projects.vercel.app',
+  'https://payload-web-liart.vercel.app/admin',
+  'https://payload-jwerk83u8-john-kimleangs-projects.vercel.app/admin',
   'http://localhost:3000',
 ]
 
