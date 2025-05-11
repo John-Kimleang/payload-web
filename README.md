@@ -29,7 +29,7 @@ To spin up this example locally, follow these steps:
 
 ### Clone
 ```bash
-git clone https://github.com/kimmleang/payload-web.git
+git clone https://github.com/John-Kimleang/payload-web.git
 ```
 
 ### Goto directory
